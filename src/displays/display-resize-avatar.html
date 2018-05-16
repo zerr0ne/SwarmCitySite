@@ -429,6 +429,7 @@
             * @param {event} event The event from the on-change
             */
             _panStart(event) {
+                event.preventDefault();
                 this.mouseDown = true;
                 if (event.clientX===undefined) {
                         this.startX = event.touches[0].clientX - this.endX;
