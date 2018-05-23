@@ -321,7 +321,7 @@
                     this.context = false;
                 } else {
                     this.context = this.$.canvas.getContext('2d');
-                    this.context.fillStyle = '#000';
+                    this.context.fillStyle = '#0FF';
                     this.context.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
                     this.context.arc(this.canvasWidth*0.5,
                     this.canvasHeight*0.5, 50, 0, 2 * Math.PI, false);
@@ -377,7 +377,7 @@
                     let nx = px * Math.cos(-rad) - py * Math.sin(-rad);
                     let ny = px * Math.sin(-rad) + py * Math.cos(-rad);
                     this.context.globalAlpha = 1.0;
-                    this.context.fillStyle = '#000';
+                    this.context.fillStyle = '#0FF';
                     this.context.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
                     this.context.save();
                     this.context.translate(this.canvasWidth * 0.5, this.canvasHeight * 0.5);
